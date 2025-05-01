@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: cache or build files
+.cache/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Multer file uploads (if saving locally — adjust path accordingly)
+uploads/
+
+# Optional: MongoDB dump files
+dump/

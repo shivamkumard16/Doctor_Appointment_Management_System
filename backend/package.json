@@ -4,11 +4,12 @@
   "description": "This is the backend part of Doctor app management system",
   "license": "ISC",
   "author": "Shivam Kumar Dubey",
-  "type": "commonjs",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "server": "nodemon server.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",

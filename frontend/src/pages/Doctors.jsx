@@ -38,7 +38,7 @@ const Doctors = () => {
         >
           Filter
         </button>
-        <div className={`flex flex-col gap-4 text-sm text-gray-600 ${filter ? 'flex' : 'hidden'} `}>
+        <div className={`flex flex-col gap-4 text-sm text-gray-600 ${filter ? 'flex' : 'hidden sm:flex'} `}>
           <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-600 rounded transition-all cursor-pointer hover:text-md  hover:bg-black hover:text-white font-serif translate-y hover:scale-105 outline-none ${speciality === 'General physician' ? 'bg-indigo-200 text-black' : ''}`} onClick={() => { speciality === 'General physician' ? navigate('/doctors') : navigate('/doctors/General physician') }}>General Physician</p>
           <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-600 rounded transition-all cursor-pointer hover:text-md  hover:bg-black hover:text-white font-serif translate-y hover:scale-105 outline-none ${speciality === 'Gynecologist' ? 'bg-indigo-200 text-black' : ''}`} onClick={() => { speciality === 'Gynecologist' ? navigate('/doctors') : navigate('/doctors/Gynecologist') }}>Gynecologist</p>
           <p className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-600 rounded transition-all cursor-pointer hover:text-md  hover:bg-black hover:text-white font-serif translate-y hover:scale-105 outline-none ${speciality === 'Dermatologist' ? 'bg-indigo-200 text-black' : ''}`} onClick={() => { speciality === 'Dermatologist' ? navigate('/doctors') : navigate('/doctors/Dermatologist') }}>Dermatologist</p>

@@ -2,10 +2,14 @@
 export default {
   content: [
     "./index.html",
-    "./src//*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}", // ✅ double asterisk means recursively include all subfolders
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#5f6FFF',
+      },
+    },
   },
   plugins: [],
 };
